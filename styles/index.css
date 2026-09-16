@@ -1,0 +1,28 @@
+*{
+    margin:0;
+}
+body{
+    height:100vh;
+    width: 100vw;
+}
+header{
+    height: 20%;
+    background-color: green;
+    /*para poner una imagen transparente podemos usar un gradiante linear o radial
+    rgba define un color rgb y el último número es el porcentaje de transparencia pero en decimal
+    en este caso 0.9 supone que la parte central es casi blanca y 0.1 que la parte externa se blanquea un poco*/
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)),url("../assets/pirineos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav{
+    height: 10%;
+    background-color: blue;
+}
+main{
+    height: 80%;
+    background-color: bisque;
+}
+footer{
+    height: 10%;
+}
