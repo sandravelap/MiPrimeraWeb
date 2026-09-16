@@ -14,14 +14,28 @@ header{
     background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)),url("../assets/pirineos.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    padding-top:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
     height: 10%;
     background-color: blue;
 }
 main{
-    height: 80%;
+    height: 60%;
     background-color: bisque;
+}
+.morado{
+    height: 25%;
+    background-color: blueviolet;
+}
+#s2{
+    height: 50%;
+    background-color: black;
 }
 footer{
     height: 10%;
