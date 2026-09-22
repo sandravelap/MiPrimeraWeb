@@ -36,6 +36,21 @@ main{
 #s2{
     height: 50%;
     background-color: black;
+    display:flex;
+    justify-content: space-around;
+}
+.polaroid {
+    height: 100%;
+    background-color: white;
+    width:fit-content;
+}
+.imgPolaroid{
+    height: 70%;
+    margin:15px;
+}
+h5{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer{
     height: 10%;
