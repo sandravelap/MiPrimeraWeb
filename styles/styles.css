@@ -1,0 +1,54 @@
+*{
+    margin:0;
+}
+body{
+    height:100vh;
+    width: 100vw;
+}
+header{
+    height: 20%;
+    background-color: #F4F6F7;
+    /*para poner una imagen transparente podemos usar un gradiante linear o radial
+    rgba define un color rgb y el último número es el porcentaje de transparencia pero en decimal
+    en este caso 0.9 supone que la parte central es casi blanca y 0.1 que la parte externa se blanquea un poco*/
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)),url("../assets/pirineos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    padding-top:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+nav{
+    height: 10%;
+    background-color: #F4F6F7;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divNav{
+    width:15%;
+    height: 80%;
+}
+.navBtn{
+    height: 100%;
+    width:100%;
+    border-radius: 10px;
+    box-shadow:3px 3px #1E3F20;
+    background-color: #D97706;
+}
+footer{
+    height: 10%;
+}
+h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 15px;
+}

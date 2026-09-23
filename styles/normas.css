@@ -1,0 +1,10 @@
+main{
+    height: 60%;
+    background-color: #F4F6F7;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    border: 5px solid red;
+}
