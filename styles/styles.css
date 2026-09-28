@@ -15,6 +15,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 105px;
 }
 h1{
     text-align: center;

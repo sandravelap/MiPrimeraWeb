@@ -2,7 +2,7 @@ main{
     height: 60%;
     background-color: #F4F6F7;
     width: 77%;
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
 }
 table{
