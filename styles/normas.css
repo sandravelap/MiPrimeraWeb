@@ -1,10 +1,21 @@
 main{
     height: 60%;
     background-color: #F4F6F7;
+    width: 77%;
+    display: inline-block;
+    vertical-align: top;
 }
 table{
     border-collapse: collapse;
+    margin:auto;
 }
-th{
-    border: 5px solid red;
+th, td{
+    border: 2px solid black;
+}
+aside{
+    height: 60%;
+    width:22%;
+    background-color: aquamarine;
+    display: inline-block;
+    vertical-align:top;
 }

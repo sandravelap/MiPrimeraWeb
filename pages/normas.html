@@ -36,15 +36,29 @@
     </nav>
     <main>
         <table>
-            <tr>
+            <tr><!--Primera fila, se van añadiendo las celdas de izquierda a derecha-->
+                <!--Como son encabezados, cada celda es un elemento th (table header)-->
                 <th>Parque Nacional</th>
                 <th>Mascotas</th>
                 <th>Acampada</th>
                 <th>Baño</th>
                 <th>Bicis</th>
             </tr>
+            <tr><!--Segunda fila-->
+                <td>Ordesa y Monte Perdido</td><!--ahora ya cada celda es un elemento con datos (table data)-->
+                <td>Atadas</td>
+                <td colspan="2">Prohibida</td>
+                <td>Restringido</td>
+            </tr>
+            <tr>
+                <td>Otro parque</td>
+                <td colspan="4">Prohibido</td>
+            </tr>
         </table>
     </main>
+    <aside>
+        aside
+    </aside>
     <footer>
         <h6>El corazón en los valles, el alma en las cumbres. Explora los Pirineos.</h6>
     </footer>
