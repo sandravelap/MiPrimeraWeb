@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Pirineos</h1>
+        <h2>Formulario</h2>
+    </header>
+    <nav>
+        <div class="divNav">
+            <a href="normas.html">
+                <button class="navBtn">Normas</button>
+            </a>
+        </div>
+         <div class="divNav">
+            <a href="grid.html">
+                <button class="navBtn">Grid</button>
+            </a>
+        </div>
+         <div class="divNav">
+            <a href="../index.html">
+                <button class="navBtn">Inicio</button>
+            </a>
+        </div>
+         <div class="divNav">
+            <a href="pages/pag4.html">
+                <button class="navBtn">Pag4</button>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <!--action sería la función del servidor que recibiría los datos del formulario-->
+        <!--en este caso no hace nada porque no tenemos server-->
+        <form action="action.php">
+            <fieldset>
+                <legend>Registro</legend>
+                <!--name es el atributo que permite luego programar con js-->
+                <label for="userName">Introduzca su nombre de usuario: </label>
+                <input type="text" id="userName" placeholder="Nombre" required><br>
+                <label for="userPassword">Introduzca su password: </label>
+                <input type="password" id="userPassword" autocomplete=""><br>
+                <label for="list">¿Desea subscribirse a nuestra lista de distribución?</label><br>
+                <label for="list">Sí</label><input type="radio" name="list" id=""><br>
+                <label for="list">No</label><input type="radio" name="list"><br>
+                <label for="list">No lo tengo claro</label><input type="radio" name="list" id=""><br>
+                <label for="channel">¿Quieres contribuir económicamente a nuestro canal?</label><br>
+                <label for="channel">Sí</label><input type="radio" name="channel" id=""><br>
+                <label for="channel">No</label><input type="radio" name="channel"><br>
+                <label for="interest">¿Cuáles son tus intereses?</label><br>
+                <!--name permite luego al programa que procesa la información agruparla correctamente-->
+                <!--value es el valor con el que luego trabaja el programa que almacena la info-->
+                <label for="interest">Jugar a la play</label><input type="checkbox" name="interest" id="" value="play"><br>
+                <label for="interest">La charanga</label><input type="checkbox" name="interest" id="" value="charanga"><br>
+                <label for="interest">Leer</label><input type="checkbox" name="interest" id="" value="leer"><br>
+                <label for="interest">Salir con los amigos</label><input type="checkbox" name="interest" id="" value="amigos"><br>
+                <label for="nacimiento">Introduce tu fecha de nacimiento: </label>
+                <!--el atributo required obliga al usuario a introducir algo en el input antes de enviar-->
+                <input type="date" name="" id="nacimiento" required><br>
+                <label for="colorHoy">¿De qué color estás hoy?</label>
+                <input type="color" name="colorHoy" id="">
+                <br><br>
+                <!--submit es el botón de enviar, value es el texto que aparece en el botón-->
+                <input type="submit" value="Enviar">
+                <!--reset es el botón de limpiar los datos introducidos, value es su texto-->
+                <input type="reset" value="Limpiar">
+                
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h6>El corazón en los valles, el alma en las cumbres. Explora los Pirineos.</h6>
+    </footer>
+</body>
+</html>

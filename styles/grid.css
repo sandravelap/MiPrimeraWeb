@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 10% 60% 10%;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+}
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+nav{
+    background-color: aquamarine;
+    grid-area: nav;
+}
+main{
+    background-color: white;
+    grid-area: main;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr ;
+}
+.row1{
+    grid-column: span 3;
+    background-color: greenyellow;
+}
+.row2{
+    grid-column: span 2;
+    background-color: green;
+}
+.row1 .row2{
+    border: 3px solid black;
+}
+aside{
+    background-color: grey;
+    grid-area: aside
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+}
