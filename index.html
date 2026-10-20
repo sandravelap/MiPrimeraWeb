@@ -16,7 +16,7 @@
     <nav>
         <div class="divNav">
             <a href="pages/normas.html">
-                <button class="navBtn">Normas</button>
+                <button class="navBtn" id="btnNormas" onmouseover="cambiarColor()" onmouseout="resetColor()">Normas</button>
             </a>
         </div>
          <div class="divNav">
@@ -30,7 +30,7 @@
             </a>
         </div>
          <div class="divNav">
-            <a href="pages/pag4.html">
+            <a href="pages/videos.html">
                 <button class="navBtn">Pag4</button>
             </a>
         </div>
@@ -40,23 +40,37 @@
             <b>section1</b>
         </section>
         <section id="s2">
-            <div class="polaroid">
+            <div class="polaroid" onclick="muestraTextoOrdesa()">
                 <!-- el div engloba las dos cosas -->
                 <img class="imgPolaroid" src="assets/Ordesa.jfif" alt="Ordesa">
                 <h5>Ordesa</h5>
             </div>
-            <div class="polaroid">
+            <div class="polaroid" onclick="muestraTextoAnayet()">
                 <!-- el div engloba las dos cosas -->
                 <img class="imgPolaroid" src="assets/Anayet.jfif" alt="Anayet">
                 <h5>Anayet</h5>
             </div>
         </section>
-        <section class="morado">
+        <section class="morado" id="sectionTexto">
             section3
         </section>
     </main>
     <footer>
         <h6>El corazón en los valles, el alma en las cumbres. Explora los Pirineos.</h6>
     </footer>
+<script>
+    function cambiarColor(){
+        document.getElementById("btnNormas").style.backgroundColor = "red"
+    }
+    function resetColor(){
+        document.getElementById("btnNormas").style.backgroundColor = "#D97706"
+    }
+    function muestraTextoOrdesa(){
+        document.getElementById("sectionTexto").innerHTML="<h5>Ordesa mola mucho.</h5>"
+    }
+    function muestraTextoAnayet(){
+        document.getElementById("sectionTexto").innerHTML="<h5>Anayet mola mucho más.</h5>"
+    }
+</script>
 </body>
 </html>

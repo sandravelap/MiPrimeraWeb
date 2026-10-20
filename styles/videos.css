@@ -1,0 +1,18 @@
+*{
+    margin:0;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 20%;
+    background-color: aqua;
+    min-height: 120pt;
+}
+nav{
+    height: 10%;
+    background-color: blueviolet;
+}
+h1{
+    font-size: 90pt;
+}
