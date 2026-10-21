@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../styles/form.css">
     <script src="../code/form.js" defer></script>
 </head>
-
 <body>
     <header>
         <h1>Mis Pirineos</h1>
@@ -43,9 +42,10 @@
             <!--en este caso no hace nada porque no tenemos server-->
             <form action="action.php">
                 <fieldset>
-                    <legend>Registro</legend>
+                    <legend>Quiz</legend>
                     <!--name es el atributo que permite luego programar con js-->
-                    <label for="userName">Introduzca su nombre de usuario: </label>
+                    <label for="userName">Introduzca su curso: </label>
+                    <!--el atributo required se utiliza con el button submit únicamente-->
                     <input type="text" id="userName" placeholder="Nombre" required><br>
                     <label for="userPassword">Introduzca su password: </label>
                     <input type="password" id="userPassword" autocomplete=""><br>
@@ -58,16 +58,16 @@
                     <label for="channel">¿Quieres contribuir económicamente a nuestro canal?</label><br>
                     <label for="channel">Sí</label><input type="radio" name="channel"><br>
                     <label for="channel">No</label><input type="radio" name="channel"><br>
-                    <label for="interest">¿Cuáles son tus intereses?</label><br>
+                    <label for="lenguajes">¿Cuáles de los siguientes son lenguajes de marcas?</label><br>
                     <!--name permite luego al programa que procesa la información agruparla correctamente-->
                     <!--value es el valor con el que luego trabaja el programa que almacena la info-->
-                    <label for="interest">Jugar a la play</label><input type="checkbox" name="interest"
+                    <label for="lenguajes">Java Script</label><input type="checkbox" name="lenguajes"
                         value="play"><br>
-                    <label for="interest">La charanga</label><input type="checkbox" name="interest"
-                        value="charanga"><br>
-                    <label for="interest">Leer</label><input type="checkbox" name="interest" value="leer"><br>
-                    <label for="interest">Salir con los amigos</label><input type="checkbox" name="interest"
-                        value="amigos"><br>
+                    <label for="lenguajes">Html</label><input type="checkbox" name="lenguajes"
+                        value="html"><br>
+                    <label for="lenguajes">CSS</label><input type="checkbox" name="lenguajes" value="css"><br>
+                    <label for="lenguajes">Typescript</label><input type="checkbox" name="lenguajes"
+                        value="ts"><br>
                     <label for="nacimiento">Introduce tu fecha de nacimiento: </label>
                     <!--el atributo required obliga al usuario a introducir algo en el input antes de enviar-->
                     <input type="date" id="nacimiento" required><br>
@@ -76,7 +76,7 @@
                     <br><br>
                     <!--submit es el botón de enviar al servidor según el atributo action del form,
                  el contenido es el texto que aparece en el botón-->
-                    <!--button type="submit">Enviar</button-->
+                    <button type="submit">Enviar</button>
                     <!--hago un botón estándar para comprobar las respuestas en mi propio navegador
                 sin tener que delegar el código en el servidor-->
                     <button type="button" id="btnComprobar">Comprobar</button>
