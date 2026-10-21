@@ -1,3 +1,12 @@
 main{
     height: auto;
+    display:flex;
+    justify-content: space-around;
+}
+section{
+    width: 40%;
+    background-color: bisque;
+}
+form{
+    padding: 5%;
 }

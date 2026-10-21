@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+    <!--es muy recomendable el atributo defer para que se carguen primero los elementos
+    del html sobre los que actúan las funciones js-->
+    <script src="code/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,7 +19,7 @@
     <nav>
         <div class="divNav">
             <a href="pages/normas.html">
-                <button class="navBtn" id="btnNormas" onmouseover="cambiarColor()" onmouseout="resetColor()">Normas</button>
+                <button class="navBtn" id="btnNormas">Normas</button>
             </a>
         </div>
          <div class="divNav">
@@ -58,19 +61,5 @@
     <footer>
         <h6>El corazón en los valles, el alma en las cumbres. Explora los Pirineos.</h6>
     </footer>
-<script>
-    function cambiarColor(){
-        document.getElementById("btnNormas").style.backgroundColor = "red"
-    }
-    function resetColor(){
-        document.getElementById("btnNormas").style.backgroundColor = "#D97706"
-    }
-    function muestraTextoOrdesa(){
-        document.getElementById("sectionTexto").innerHTML="<h5>Ordesa mola mucho.</h5>"
-    }
-    function muestraTextoAnayet(){
-        document.getElementById("sectionTexto").innerHTML="<h5>Anayet mola mucho más.</h5>"
-    }
-</script>
 </body>
 </html>

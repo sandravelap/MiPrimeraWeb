@@ -14,6 +14,7 @@ header{
     background-image: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)),url("../assets/pirineos.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    
     background-size: cover;
     min-height: 105px;
 }
